@@ -3,15 +3,17 @@ import { Link, withRouter } from 'react-router-dom';
 const Nav = props => {
 	return (
 		<nav>
-			<h1 className="nav--title">Matt Long</h1>
+			<Link to="/">
+				<h1 className="nav--title">Matt Long</h1>
+			</Link>
 			<ul className="nav--menu">
 				<Link to="/bio">
 					<li>Bio</li>
 				</Link>
 				<li>DEMO</li>
-				<Link>
+				<Link to="/demo/videos">
 					{' '}
-					<li to="/demo/videos">Videos</li>
+					<li>Videos</li>
 				</Link>
 				<Link to="/demo/voice">
 					{' '}
@@ -23,9 +25,9 @@ const Nav = props => {
 				</Link>
 			</ul>
 			<ul className="nav--footer">
-				<i class="fab fa-twitter-square"></i>
-				<i class="fab fa-facebook-square"></i>
-				<i class="fab fa-instagram"></i>
+				<i className="fab fa-twitter-square"></i>
+				<i className="fab fa-facebook-square"></i>
+				<i className="fab fa-instagram"></i>
 			</ul>
 		</nav>
 	);
