@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Nav from './Nav';
+import Previews from './Previews';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<header className="sidebar">
+				<Nav />
+			</header>
+			<main className="main--container">
+				<img
+					className="main--image"
+					src="https://uploadvan.castingworkbook.com/Photo/_LON/544572/86d61692-35eb-41cc-9ada-34da294c6791.jpg"
+					alt="Matt Long"
+				/>
+				<Previews />
+			</main>
+		</div>
+	);
 }
 
 export default App;

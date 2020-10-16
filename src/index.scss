@@ -1,0 +1,17 @@
+@import 'styles/reset.scss';
+
+@media only screen and (max-width: 960px) {
+	html {
+		font-size: 12px;
+	}
+
+	.layout {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	html {
+		font-size: 10px;
+	}
+}

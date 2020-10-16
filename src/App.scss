@@ -1,0 +1,40 @@
+Nav {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 220px;
+	align-items: center;
+	background-color: #f1f3f8;
+	height: 100vh;
+	.nav--title {
+		text-align: center;
+		font-size: 33px;
+		padding: 1em;
+	}
+	li {
+		list-style: none;
+		font-size: 16px;
+		padding: 1em, 0;
+		margin: 1em;
+	}
+	.nav--footer {
+		margin: 5px;
+		padding: 5px;
+		text-align: center;
+		i {
+			padding: 5px;
+			font-size: 1em;
+		}
+	}
+}
+
+.App {
+	display: flex;
+	flex-direction: row;
+	.main--container {
+		margin-left: 220px;
+	}
+	.main--image {
+		margin-left: 220px;
+	}
+}
