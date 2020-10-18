@@ -27,64 +27,70 @@ const Contact = () => {
 	};
 
 	return (
-		<Form id="contactForm" onSubmit={handleSubmit}>
-			<h1>Get in touch</h1>
-			<Form.Group controlId="formFirstName">
-				<Form.Label>First Name</Form.Label>
-				<Form.Control
-					type="text"
-					name="firstName"
-					value={firstName}
-					onChange={handleFirstName}
-				/>
-			</Form.Group>
+		<section class="w-2/5 ">
+			<Form
+				id="contactForm"
+				onSubmit={handleSubmit}
+				class="bg-white shadow-md rounded p-4 mx-4"
+			>
+				<h1>Get in touch</h1>
+				<Form.Group controlId="formFirstName">
+					<Form.Label>First Name</Form.Label>
+					<Form.Control
+						type="text"
+						name="firstName"
+						value={firstName}
+						onChange={handleFirstName}
+					/>
+				</Form.Group>
 
-			<FormGroup>
-				<Form.Label>Last Name</Form.Label>
-				<Form.Control
-					type="text"
-					value={lastName}
-					name="lastName"
-					onChange={handleLastName}
-				/>
-			</FormGroup>
+				<FormGroup>
+					<Form.Label>Last Name</Form.Label>
+					<Form.Control
+						type="text"
+						value={lastName}
+						name="lastName"
+						onChange={handleLastName}
+					/>
+				</FormGroup>
 
-			<FormGroup>
-				<Form.Label>Email</Form.Label>
-				<Form.Control
-					type="text"
-					value={email}
-					name="email"
-					onChange={handleEmail}
-				/>
-			</FormGroup>
+				<FormGroup>
+					<Form.Label>Email</Form.Label>
+					<Form.Control
+						type="text"
+						value={email}
+						name="email"
+						onChange={handleEmail}
+					/>
+				</FormGroup>
 
-			<FormGroup>
-				<Form.Label>Subject</Form.Label>
-				<Form.Control
-					type="text"
-					value={subject}
-					name="subject"
-					onChange={handleSubject}
-				/>
-			</FormGroup>
+				<FormGroup>
+					<Form.Label>Subject</Form.Label>
+					<Form.Control
+						type="text"
+						value={subject}
+						name="subject"
+						onChange={handleSubject}
+					/>
+				</FormGroup>
 
-			<FormGroup>
-				<Form.Label>Message</Form.Label>
-				<Form.Control
-					as="textarea"
-					value={message}
-					name="message"
-					onChange={handleMessage}
-				/>
-			</FormGroup>
+				<FormGroup>
+					<Form.Label>Message</Form.Label>
+					<Form.Control
+						as="textarea"
+						value={message}
+						name="message"
+						onChange={handleMessage}
+					/>
+				</FormGroup>
 
-			<FormGroup>
-				<Button variant="light" type="submit">
-					Submit
-				</Button>
-			</FormGroup>
-		</Form>
+				<FormGroup>
+					<Button variant="light" type="submit">
+						Submit
+					</Button>
+				</FormGroup>
+			</Form>
+		</section>
 	);
 };
 

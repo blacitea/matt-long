@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Previews from './Previews';
 import Contact from './Contact';
 import { Route, Switch } from 'react-router-dom';
+import Bio from './Bio';
 
 function App() {
 	return (
@@ -13,7 +14,7 @@ function App() {
 			</header>
 			<main className="main--container">
 				<Switch>
-					<Route path="/bio" />
+					<Route path="/bio" component={Bio} />
 					<Route path="/video" />
 					<Route path="/voice" />
 					<Route path="/contact">
