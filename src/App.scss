@@ -1,22 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 Nav {
-	position: fixed;
-	display: flex;
-	flex-direction: column;
 	align-items: center;
-	background-color: #f1f3f8;
-	height: 100vh;
+	background-color: #ffffff;
+	width: 300px;
+	// border: 2px solid #8d93ab;
+	padding: 0 2em;
 	.nav--title {
-		text-align: center;
+		align-items: center;
 		font-size: 33px;
-		padding: 1em;
+		font-weight: 900;
+		color: #8d93ab;
 	}
 	li {
 		list-style: none;
-		font-size: 16px;
-		padding: 1em, 0;
-		margin: 1em;
+		font-size: 1em;
+		padding: 0.5em, 0;
+		align-self: flex-start;
+	}
+	a {
+		list-style: none;
+		font-size: 1.25em;
+		padding: 0.25em, 0;
 	}
 	.nav--footer {
+		display: flex;
+		flex-direction: row;
 		margin: 5px;
 		padding: 5px;
 		text-align: center;
@@ -28,17 +40,87 @@ Nav {
 }
 
 .App {
-	display: flex;
-	flex-direction: row;
+	padding: 0%;
+	margin: 0%;
+	background-color: #ffffff;
+	color: #8d93ab;
+	a {
+		color: #393b44;
+	}
+	.modelling_container {
+		width: 100%;
+		display: flex;
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-content: center;
+		}
+		.previews--item {
+			display: inline-block;
+		}
+	}
 	.main--container {
-		margin-left: 220px;
 		margin-top: 50px;
 		width: 100%;
 		display: flex;
-		justify-content: center;
+		justify-content: start;
 		align-content: center;
 	}
 	.main--image {
-		margin-left: 220px;
+		margin: auto;
+		width: 630px;
+	}
+}
+
+.previews--container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-top: 2em;
+	width: 630px;
+	// border: 2px solid red;
+	.previews--item {
+		img {
+			display: block;
+			height: auto;
+			width: 300px;
+		}
+		p {
+			padding: 0;
+			width: 300px;
+			text-align: justify;
+		}
+	}
+}
+
+#contactForm h1 {
+	margin-bottom: 1em;
+}
+.name__container {
+	display: flex;
+	justify-content: space-between;
+}
+.name__field {
+	display: inline-block;
+	width: 48%;
+}
+
+.form-text {
+	height: 150px;
+}
+.photography--container,
+.modelling--container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.photography--item,
+	.modelling--item {
+		padding: 1em 1em;
+		margin: 0.5em;
+		width: 20em;
 	}
 }

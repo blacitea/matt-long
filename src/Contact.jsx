@@ -27,33 +27,34 @@ const Contact = () => {
 	};
 
 	return (
-		<section class="w-2/5 ">
+		<section class="h-full w-3/5 max-w-2xl bg-white px-20 py-10 mt-20">
 			<Form
 				id="contactForm"
 				onSubmit={handleSubmit}
 				class="bg-white shadow-md rounded p-4 mx-4"
 			>
 				<h1>Get in touch</h1>
-				<Form.Group controlId="formFirstName">
-					<Form.Label>First Name</Form.Label>
-					<Form.Control
-						type="text"
-						name="firstName"
-						value={firstName}
-						onChange={handleFirstName}
-					/>
-				</Form.Group>
+				<div className="name__container">
+					<Form.Group className="name__field">
+						<Form.Label>First Name</Form.Label>
+						<Form.Control
+							type="text"
+							name="firstName"
+							value={firstName}
+							onChange={handleFirstName}
+						/>
+					</Form.Group>
 
-				<FormGroup>
-					<Form.Label>Last Name</Form.Label>
-					<Form.Control
-						type="text"
-						value={lastName}
-						name="lastName"
-						onChange={handleLastName}
-					/>
-				</FormGroup>
-
+					<FormGroup className="name__field">
+						<Form.Label>Last Name</Form.Label>
+						<Form.Control
+							type="text"
+							value={lastName}
+							name="lastName"
+							onChange={handleLastName}
+						/>
+					</FormGroup>
+				</div>
 				<FormGroup>
 					<Form.Label>Email</Form.Label>
 					<Form.Control
@@ -81,11 +82,16 @@ const Contact = () => {
 						value={message}
 						name="message"
 						onChange={handleMessage}
+						className="form-text"
 					/>
 				</FormGroup>
 
 				<FormGroup>
-					<Button variant="light" type="submit">
+					<Button
+						variant="light"
+						type="submit"
+						className="hover:bg-gray-500 hover:text-white"
+					>
 						Submit
 					</Button>
 				</FormGroup>

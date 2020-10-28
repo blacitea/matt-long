@@ -1,18 +1,24 @@
 @import 'styles/reset.scss';
 @import '~bootstrap/scss/bootstrap';
-
-@media only screen and (max-width: 960px) {
-	html {
-		font-size: 12px;
-	}
-
-	.layout {
-		flex-direction: column;
-	}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', 'Roboto', sans-serif;
 }
 
-@media only screen and (max-width: 320px) {
-	html {
-		font-size: 10px;
-	}
-}
+// @media only screen and (max-width: 960px) {
+// 	html {
+// 		font-size: 12px;
+// 		background-color: #d6e0f0;
+// 	}
+
+// 	.layout {
+// 		flex-direction: column;
+// 	}
+// }
+
+// @media only screen and (max-width: 320px) {
+// 	html {
+// 		font-size: 10px;
+// 	}
+// }

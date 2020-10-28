@@ -1,23 +1,31 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+
 const Nav = props => {
 	return (
-		<nav className="sm:w-1/5">
+		<nav>
 			<Link to="/">
-				<h1 className="nav--title">Matt Long</h1>
+				<h1 className="nav--title mt-10 py-2">MATT LONG</h1>
 			</Link>
 			<ul className="nav--menu">
 				<Link to="/bio">
 					<li>Bio</li>
 				</Link>
-				<li>DEMO</li>
-				<Link to="/demo/videos">
+				<Link to="/demo">
 					{' '}
-					<li>Videos</li>
+					<li>Demo</li>
 				</Link>
-				<Link to="/demo/voice">
+				<Link to="/modeling">
 					{' '}
-					<li>Voice</li>
+					<li>Modelling</li>
+				</Link>
+				<Link to="/photography">
+					{' '}
+					<li>Photography</li>
+				</Link>
+				<Link to="/projects">
+					{' '}
+					<li>Projects</li>
 				</Link>
 				<Link to="/contact">
 					{' '}

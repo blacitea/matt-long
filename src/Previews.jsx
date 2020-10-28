@@ -6,10 +6,28 @@ const Previews = props => {
 		<ul className="previews--container">
 			<li className="previews--item">
 				<img src={image2} alt="profile pic" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 			</li>
 			<li className="previews--item">
 				<img src={image1} alt="profile pic" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 			</li>
+			{/* <li className="previews--item">
+				<img src={image2} alt="profile pic" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			</li>
+			<li className="previews--item">
+				<img src={image1} alt="profile pic" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			</li>
+			<li className="previews--item">
+				<img src={image2} alt="profile pic" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			</li>
+			<li className="previews--item">
+				<img src={image1} alt="profile pic" />
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			</li> */}
 		</ul>
 	);
 };
