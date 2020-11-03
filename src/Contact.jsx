@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { FormGroup } from 'react-bootstrap';
 
-const Contact = () => {
+const Contact = ({ openModal }) => {
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [email, setEmail] = useState('');
@@ -23,7 +23,18 @@ const Contact = () => {
 		event.preventDefault();
 		window.emailjs
 			.sendForm('service_7q8iz5w', 'template_krmuget', '#contactForm')
-			.then(resolve => alert(`success! ${resolve.status}, ${resolve.text}`));
+			.then(resolve => {
+				setFirstName('');
+				setLastName('');
+				setMessage('');
+				setSubject('');
+				setEmail('');
+				openModal(
+					<div className="email-modal">
+						Thanks for reaching out! I’ll get back to you as soon as I can.
+					</div>
+				);
+			});
 	};
 
 	return (
@@ -82,7 +93,8 @@ const Contact = () => {
 						value={message}
 						name="message"
 						onChange={handleMessage}
-						className="form-text"
+						className="textarea"
+						style={{ height: 300 }}
 					/>
 				</FormGroup>
 

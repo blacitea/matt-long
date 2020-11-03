@@ -21,7 +21,7 @@ import photography07 from './images/photography/07.JPG';
 import photography08 from './images/photography/08.JPG';
 import photography09 from './images/photography/09.JPG';
 import photography10 from './images/photography/10.JPG';
-import photography11 from './images/photography/11.JPG';
+import photography11 from './images/photography/11.png';
 import photography12 from './images/photography/12.JPG';
 
 export const modelings = [

@@ -49,6 +49,10 @@ Nav {
 	}
 	.container {
 		width: 100%;
+		.about-me {
+			margin-top: 2em;
+			width: 60%;
+		}
 
 		.title {
 			font-size: 3rem;
@@ -66,6 +70,7 @@ Nav {
 				overflow: hidden;
 				width: 11em;
 				height: 7em;
+				contain: paint;
 			}
 		}
 		Form {
@@ -141,6 +146,11 @@ Nav {
 	width: 48%;
 }
 
-.form-text {
-	height: 150px;
+textarea {
+	resize: none;
+}
+
+FormGroup > Button {
+	text-align: center;
+	align-self: center;
 }
