@@ -27,13 +27,13 @@ const Contact = () => {
 	};
 
 	return (
-		<section class="h-full w-3/5 max-w-2xl bg-white px-20 py-10 mt-20">
+		<section class="container">
 			<Form
 				id="contactForm"
 				onSubmit={handleSubmit}
 				class="bg-white shadow-md rounded p-4 mx-4"
 			>
-				<h1>Get in touch</h1>
+				<h2 className="title">Contact me</h2>
 				<div className="name__container">
 					<Form.Group className="name__field">
 						<Form.Label>First Name</Form.Label>

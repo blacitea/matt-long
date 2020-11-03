@@ -47,9 +47,31 @@ Nav {
 	a {
 		color: #393b44;
 	}
-	.modelling_container {
+	.container {
 		width: 100%;
-		display: flex;
+
+		.title {
+			font-size: 3rem;
+			font-weight: 600;
+		}
+		.photography--container,
+		.modelling--container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			.photography--item,
+			.modelling--item {
+				padding: 1em 1em;
+				margin: 0.5em;
+				overflow: hidden;
+				width: 11em;
+				height: 7em;
+			}
+		}
+		Form {
+			width: 50%;
+			height: 70%;
+		}
 
 		ul {
 			display: flex;
@@ -59,6 +81,16 @@ Nav {
 		}
 		.previews--item {
 			display: inline-block;
+		}
+		.iframe-box {
+			width: 30rem;
+			height: 22rem;
+			margin: 1rem;
+			overflow: hidden;
+			iframe {
+				margin-left: 50%;
+				transform: translateX(-50%);
+			}
 		}
 	}
 	.main--container {
@@ -111,16 +143,4 @@ Nav {
 
 .form-text {
 	height: 150px;
-}
-.photography--container,
-.modelling--container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	.photography--item,
-	.modelling--item {
-		padding: 1em 1em;
-		margin: 0.5em;
-		width: 20em;
-	}
 }
