@@ -7,11 +7,11 @@ const Projects = () => {
 			<section className="iframe-box">
 				<p className="my-3 text-2xl font-bold">immured</p>
 				<iframe
-					src="https://player.vimeo.com/video/402729485?color=8d93ab&byline=0"
-					width="480"
-					height="280"
+					width="960"
+					height="540"
+					src="https://www.youtube.com/embed/HEH2BDDUEwM"
 					frameborder="0"
-					allow="autoplay; fullscreen"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen
 					title="immured"
 				></iframe>
@@ -19,8 +19,8 @@ const Projects = () => {
 			<section className="iframe-box">
 				<p className="my-3 text-2xl font-bold">Espioneige</p>
 				<iframe
-					width="480"
-					height="343"
+					width="960"
+					height="540"
 					src="https://www.youtube.com/embed/kTckcPpQJSg"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
