@@ -12,7 +12,7 @@ const Projects = () => {
 					src="https://www.youtube.com/embed/HEH2BDDUEwM"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
+					allowfullscreen="true"
 					title="immured"
 				></iframe>
 			</section>
@@ -24,7 +24,7 @@ const Projects = () => {
 					src="https://www.youtube.com/embed/kTckcPpQJSg"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
+					allowfullscreen="true"
 					title="Espioneige"
 				></iframe>
 			</section>
