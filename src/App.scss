@@ -51,6 +51,18 @@ Nav {
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
+		.button-CV {
+			font-size: 1.25em;
+			border-radius: 2px;
+			background-color: #8d93ab;
+			color: #ffffff;
+			padding: 2px 10px;
+			&:hover {
+				background-color: #ffffff;
+				color: #393b44;
+				border: 1px solid #393b44;
+			}
+		}
 	}
 	.container {
 		width: 100%;
