@@ -103,8 +103,9 @@ Nav {
 			display: inline-block;
 		}
 		.iframe-box {
-			width: 30rem;
-			height: 22rem;
+			margin: 0 0 5em 0;
+			width: 960px;
+			height: auto;
 			iframe {
 				margin-left: 50%;
 				transform: translateX(-50%);
