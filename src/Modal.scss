@@ -28,33 +28,30 @@
 	display: inline-flex;
 	position: relative;
 	left: 50%;
-	top: 40%;
+	// top: 40%;
+	top: 30%;
 	width: 60%;
-	height: 60%;
+	height: 80%;
 	transform: translate(-50%, -50%);
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-end;
-	background-color: transparent;
-	border-radius: 10px;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: flex-end;
+	// background-color: transparent;
+	// border-radius: 10px;
 	animation: slidein;
 	animation-duration: 0.5s;
-	border: 0;
+	// border: 0;
 	// box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 	outline: none;
-
+	margin: 10%;
 	.modal-content {
-		// padding: 0 1em 1em;
 		height: 80%;
-		width: 80%;
+
 		background: transparent;
 		display: flex;
-		justify-content: center;
+
 		align-content: center;
-		image {
-			max-height: 50%;
-			max-width: 50%;
-		}
+
 		.email-modal {
 			margin: auto;
 			padding: 2em;
@@ -65,6 +62,11 @@
 	.modal-close {
 		cursor: pointer;
 		padding: 0.2em 0.5em;
+		z-index: 99;
+		background-color: white;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 
 	.modal-success {
@@ -78,7 +80,7 @@
 		transform: translate(-50%, -50%);
 	}
 	to {
-		top: 40%;
+		top: 30%;
 		transform: translate(-50%, -50%);
 	}
 }

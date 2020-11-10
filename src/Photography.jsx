@@ -12,7 +12,14 @@ const Photography = ({ openModal }) => {
 					<li
 						className="photography--item"
 						onClick={() => {
-							openModal(<img src={img} alt={`${img}`} />);
+							openModal(
+								<img
+									className="img-responsive"
+									src={img}
+									alt={`${img}`}
+									height
+								/>
+							);
 						}}
 					>
 						<img src={img} alt={`${img}`} />

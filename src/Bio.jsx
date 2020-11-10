@@ -3,14 +3,9 @@ import profilePic from './images/03.jpg';
 
 const Bio = () => {
 	return (
-		<section className="container">
-			<section className="bio-image">
-				<p className="title">About Matt Long</p>
-				<aside className="m-2 p-1 flex-1 max-w-sm mx=auto shadow">
-					<img src={profilePic} alt="Matt" />
-				</aside>
-			</section>
+		<section className="container bio-flex">
 			<article className="about-me">
+				<h2 className="title">About Matt Long</h2>
 				<p>
 					Matt Long is a Canadian filmmaker, actor, and model based in Toronto.
 					In his personal work, Matt enjoys crafting stories that deal with the
@@ -34,6 +29,11 @@ const Bio = () => {
 					different social settings.
 				</p>
 			</article>
+			<section className="bio-image">
+				<aside className="m-2 p-1 flex-1 max-w-sm mx=auto shadow">
+					<img src={profilePic} alt="Matt" />
+				</aside>
+			</section>
 		</section>
 	);
 };
